@@ -1,3 +1,3 @@
-function lolello { 
+function lolello() { 
   ;
 }
