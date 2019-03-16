@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: gray;
+}
+
+.maincontainer {
+    height: 100vh;
+    position: relative;
+}
+
+.leftpolygon {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    -webkit-clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+    clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+    background-color: #008c41;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+.rightpolygon {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    -webkit-clip-path: polygon(55% 0, 100% 0%, 100% 100%, 45% 100%);
+    clip-path: polygon(55% 0, 100% 0%, 100% 100%, 45% 100%);
+    background-color: #008c41;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+}
