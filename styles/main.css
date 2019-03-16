@@ -22,7 +22,7 @@ body {
     height: 100vh;
     -webkit-clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
     clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
-    background-image: url("images/leftpolygonpattern.png");
+    background-image: url("../images/leftpolygonpattern.png");
 }
 
 .rightpolygon {
