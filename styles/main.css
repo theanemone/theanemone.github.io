@@ -10,6 +10,16 @@
 body {
     background: gray;
 }
+.menu-panel
+{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:1;
+    background-color:red;
+    width:100%;
+    height:100vh;
+}
 
 .maincontainer {
     height: 100vh;
