@@ -9,6 +9,8 @@
     width:60px;
     height:60px;
     text-align:center;
+    border:2px dashed #333333;
+    box-shadow: 0 0 0 2px #bbb;
 }
 .hamburger
 {

@@ -7,7 +7,9 @@ wrapper.addEventListener("click",function(){
     {
         container.removeChild(document.querySelector(".menu-panel"));        
         $(".menu").css("background-color","#bbb");
-        $(".hamburger span").css("background-color","#333");
+        $(".hamburger span").css("background-color","#222");
+        $(".menu").css("border-color","#333333")
+        $(".menu").css("box-shadow","0 0 0 2px #bbb")
     }
     else{
         const menu=document.createElement("div");
@@ -16,7 +18,8 @@ wrapper.addEventListener("click",function(){
         container.appendChild(menu);
         $(".menu").css("background-color","#222");
         $(".hamburger span").css("background-color","#bbb");
-     
+        $(".menu").css("border-color","#bbbbbb")
+        $(".menu").css("box-shadow","0 0 0 2px #222")
     }
 
 this.classList.toggle("active");
