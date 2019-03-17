@@ -64,7 +64,7 @@ li:hover
     background-image: url("../images/leftpolygonpattern.png");
     transition: all .5s;
     transition: background 2s;
-    
+    background-size:25vw;
   
   
 }
@@ -82,6 +82,8 @@ li:hover
     background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
     transition: all .5s;
     transition: background 2s;
+    
+background-size:25vw;
    
    
 }

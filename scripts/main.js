@@ -19,8 +19,12 @@ $(patrickheader).mouseenter(function () {
   $("#headeranimleft").css("width", "0");
   $("#headeranimleft").css("box-shadow", "none");
 });
-
+function enterdata()
+{
+  
+}
 kacperheader.mouseenter(function () {
+ 
   kacperheader.css("color", "rgb(39, 39, 39)");
   kacperheader.css("cursor", "pointer");
   kacperheader.css("text-shadow", "none");
@@ -28,7 +32,6 @@ kacperheader.mouseenter(function () {
   $("#headeranimright").css("transform", "translate(1vw, -.5vw)");
   $("#headeranimright").css("width", "60%");
   $("#headeranimright").css("box-shadow", ".15vw .15vw black");
-
 }).mouseleave(function () {
   kacperheader.css("color", "white");
   kacperheader.css("text-shadow", ".12vw .12vw black");
