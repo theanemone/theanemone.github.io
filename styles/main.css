@@ -34,6 +34,11 @@ body {
     clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
     background-image: url("../images/leftpolygonpattern.png");
     transition: all .5s;
+    transition: background 2s;
+}
+
+.leftpolygon:hover {
+    background-position: 10% 0%;
 }
 
 .rightpolygon {
@@ -44,6 +49,11 @@ body {
     clip-path: polygon(55% 0, 100% 0%, 100% 100%, 45% 100%);
     background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
     transition: all .5s;
+    transition: background 2s;
+}
+
+.rightpolygon:hover {
+    background-position: -10% 0%;
 }
 
 .ltextholder {
@@ -80,6 +90,5 @@ body {
     height: 150%;
     z-index: -1;
     top: -30%;
-    transition: ease-out all .5s;
-
+    transition: all .5s;
 }
