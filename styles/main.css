@@ -33,6 +33,7 @@ body {
     -webkit-clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
     clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
     background-image: url("../images/leftpolygonpattern.png");
+    transition: all .5s;
 }
 
 .rightpolygon {
@@ -43,14 +44,7 @@ body {
     clip-path: polygon(55% 0, 100% 0%, 100% 100%, 45% 100%);
     background-color: #008c41;
     background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/prism.png");
-}
-
-.rightpolygon:hover {
-    cursor: pointer;
-}
-
-.leftpolygon:hover {
-    cursor: pointer;
+    transition: all .5s;
 }
 
 .ltextholder {
@@ -69,17 +63,60 @@ body {
 }
 
 .pheader, .kheader {
-    font-size: 5vw;
+    font-size: 4vw;
     text-shadow: .12vw .12vw black;
-    color: white;
+    color: rgb(255, 255, 255);
     transition: all .5s;
     display: inline-block;
 }
 
-.pheader:hover {
-    transform: scale(1.3);
+.headeranim {
+    background: white;
+    position: absolute;
+    text-align: center;
+    width: 0%;
+    right: 20%;
+    height: 150%;
+    z-index: -1;
+    top: -30%;
+    transition: ease-out all .5s;
+
 }
 
-.kheader:hover {
+ /* .rtextholder:hover > .headeranim {
+    width: 60%;
+    box-shadow: .15vw .15vw black;
+    cursor: pointer;
+    transform: translate(1vw, -.5vw);
+}
+
+.rtextholder:hover > .kheader {
+    color: rgb(39, 39, 39);
+    text-shadow: none;
+    cursor: pointer;
+    transform: translate(1vw, -.5vw);
+}
+
+.ltextholder:hover > .headeranim {
+    width: 60%;
     transform: scale(1.3);
+    box-shadow: .15vw .15vw black;
+    cursor: pointer;
+    transform: translate(1vw, -.5vw);
+}
+
+.ltextholder:hover > .pheader {
+    color: rgb(39, 39, 39);
+    text-shadow: none;
+    transform: scale(1.3);
+    cursor: pointer;
+    transform: translate(1vw, -.5vw);
+}  */
+
+.middleshapes {
+    transform-origin: center;
+    background: white;
+    width: 10vh;
+    height: 10vh;
+    text-align: center;
 }

@@ -2,15 +2,21 @@
 {
     background-color:#bbb;
     border-radius:50%;
-  z-index:2;
+    z-index:2;
     position:fixed;
     top:20px;
     right:20px;
     width:60px;
     height:60px;
     text-align:center;
-    border:2px dashed #333333;
+    border:2px solid #333333;
     box-shadow: 0 0 0 2px #bbb;
+    transition: transform .5s;
+}
+
+.menu:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 .hamburger
 {

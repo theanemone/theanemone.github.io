@@ -1,7 +1,8 @@
+const mainmenu=document.querySelector(".menu");
 const wrapper=document.querySelector(".hamburger");
 const container=document.querySelector(".maincontainer");
 
-wrapper.addEventListener("click",function(){
+mainmenu.addEventListener("click",function(){
 
     if(wrapper.classList.contains("active"))
     {
@@ -22,5 +23,5 @@ wrapper.addEventListener("click",function(){
         $(".menu").css("box-shadow","0 0 0 2px #222")
     }
 
-this.classList.toggle("active");
+wrapper.classList.toggle("active");
 });
