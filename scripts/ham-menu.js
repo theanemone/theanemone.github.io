@@ -26,7 +26,7 @@ mainmenu.addEventListener("click",function(){
         $(".menu").css("box-shadow","0 0 0 2px #222");
         
     }
-    $(".menu-panel").css("opacity","1");
+    $("ul").css("opacity","1");
     $(".menu-panel").slideToggle();
 wrapper.classList.toggle("active");
 });
