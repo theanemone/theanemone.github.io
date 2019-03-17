@@ -1,36 +1,29 @@
 const panels = $(".headeranim");
 const kacperheader = $(".kheader");
 const patrickheader = $(".pheader");
-function menter(object,anim)
+function mouseevents(object,anim,color,cursor,textshadow,transform1,transform2,width,boxshadow)
 {
-  object.css("color", "rgb(39, 39, 39)");
-  object.css("cursor", "pointer");
-  object.css("text-shadow", "none");
-  object.css("transform", "translate(1vw, -.5vw)");
-  
- anim.css("transform", "translate(1vw, -.5vw)");
- anim.css("width", "60%");
- anim.css("box-shadow", ".15vw .15vw black");
+  object.css("color", `${color}`);
+  object.css("cursor", `${cursor}`);
+  object.css("text-shadow", `${textshadow}`);
+  object.css("transform", `${transform1}`);
+  anim.css("transform", `${transform2}`);
+  anim.css("width", `${width}`);
+  anim.css("box-shadow", `${boxshadow}`);
 }
-function mleave(object,anim)
-{
-  object.css("color", "white");
-  object.css("text-shadow", ".12vw .12vw black");
-  object.css("transform", "translate(0)");
-  anim.css("transform", "translate(0)");
-  anim.css("width", "0");
-  anim.css("box-shadow", "none");
-}
+
 $(patrickheader).mouseenter(function () {
-  menter(patrickheader,$("#headeranimleft"));
+  mouseevents(patrickheader,$("#headeranimleft"),"rgb(39, 39, 39)","pointer","none","translate(1vw, -.5vw)","translate(1vw, -.5vw)","60%",".15vw .15vw black");
 
 }).mouseleave(function () {
-  mleave(patrickheader,$("#headeranimleft"));
+  mouseevents(patrickheader,$("#headeranimleft"),"white","default",".12vw .12vw black","translate(0)","translate(0)","0","none");
 });
 
 kacperheader.mouseenter(function () {
- menter(kacperheader,$("#headeranimright"));
+  mouseevents(kacperheader,$("#headeranimright"),"rgb(39, 39, 39)","pointer","none","translate(1vw, -.5vw)","translate(1vw, -.5vw)","60%",".15vw .15vw black");
+
  
 }).mouseleave(function () {
-  mleave(kacperheader,$("#headeranimright"));
+ 
+  mouseevents(kacperheader,$("#headeranimright"),"white","default",".12vw .12vw black","translate(0)","translate(0)","0","none");
 });
