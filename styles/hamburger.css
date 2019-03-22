@@ -21,8 +21,8 @@
 .hamburger
 {
     position:absolute;
-    top:19px;
-    right:15px;
+    top:30%;
+    right:25%;
     width: 30px;
     height:25px;
     transition:0.2s;

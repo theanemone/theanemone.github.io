@@ -27,3 +27,49 @@ kacperheader.mouseenter(function () {
  
   mouseevents(kacperheader,$("#headeranimright"),"white","default",".12vw .12vw black","translate(0)","translate(0)","0","none");
 });
+
+
+
+$(window).resize(function(){
+  if(window.innerWidth>600)
+  {
+   
+    $(".leftpolygon").css("display","block");
+    $(".rightpolygon").css("display","block");
+    $(".leftpolygon").css("clip-path","polygon(0 0, 55% 0, 100% 100%, 0 100%)");
+    $(".rightpolygon").css("clip-path","polygon(55% 0, 100% 0%, 100% 100%, 45% 100%)");
+    console.log("hejo");
+  }
+else if(window.innerWidth<=600)
+{
+
+    $(".leftpolygon").css("display","block");
+    $(".rightpolygon").css("display","none");
+    $(".patrictile").css("display","block");
+    $(".kacpertile").css("display","none");
+    $(".fa-angle-right").css("transform","rotate(0deg)");
+
+ 
+  
+  $(".leftpolygon").css("clip-path","none");
+  $(".rightpolygon").css("clip-path","none");
+
+  
+}
+});
+$(".fa-angle-right").click(function(){
+
+  
+  if($(".kacpertile").css('display') == 'none')
+  {
+    $(".patricktile").css("display","none");
+    $(".kacpertile").css("display","block");
+    $(".fa-angle-right").css("transform","rotate(180deg)");
+  }
+   else if($(".patricktile").css('display') == 'none')
+  {
+    $(".kacpertile").css("display","none");
+    $(".patricktile").css("display","block");
+    $(".fa-angle-right").css("transform","rotate(0deg)");
+  }
+});
