@@ -1,0 +1,136 @@
+input,button
+{
+    padding:10px;
+    font-size:20px;
+    margin:20px auto;
+    border:1px rgb(197, 197, 199) solid;
+    display:block;
+    transition:0.3s;
+    border-radius:5px;
+    color:#fff;
+    border:#fff 2px solid;
+   
+}
+input
+{
+
+    background-color:rgb(200, 209, 216);
+ 
+    
+    
+}
+i
+{
+    color:#fff;
+    
+    font-size:60px;
+}
+
+.tile .label1,.tile .label2
+{
+    font-size:25px;
+    padding-top:20px;
+}
+::placeholder
+{
+color:#fff;
+}
+
+button:hover
+{
+    cursor:pointer;
+    background-color:#fff;
+    color:rgb(95, 85, 85);
+    border:rgb(95, 85, 85) solid 2px;
+}
+.App
+{
+    position:absolute;
+    top:10%;
+    
+    width:1250px;
+    margin-left:auto;
+    margin-right:auto;
+    
+   
+    
+  
+}
+
+form
+{
+    width:500px;
+    
+    
+    margin-left:35%;
+    background-color:rgb(200, 209, 216);
+    padding:2px;
+    
+}
+.results
+{
+    margin-left:5%;
+   margin-top:100px;
+   background-color:rgb(200, 209, 216);
+  
+display:block;
+   
+   
+}
+.tile
+{
+  
+ 
+   height:150px;
+   display:flex;
+   flex-direction:column;
+   box-sizing:border-box;
+   text-align:center;
+   margin:0;
+   padding:32.5px 0px;
+  
+
+}
+
+   .row
+   {
+       display:flex;
+       justify-content:space-around;
+       align-items:center;
+   }
+  
+.tile .label
+{
+    display:block;
+  
+    font-size:25px;
+}
+#temp
+{
+    display:block;
+    margin-top:20px;
+    font-size:40px;
+}
+#details 
+{
+font-size:20px;
+margin-top:40px;
+} 
+h3,h4
+{
+    font-weight:normal;
+    color:#fff;
+    font-weight:bold;
+    margin:0px;
+    
+}
+body
+{
+    
+    background-color:#99CCFF;
+    
+}
+.sunsetico
+{
+    color:black;
+}
